@@ -14,7 +14,12 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => BottomNavCubit(),
-      child: MaterialApp(home: MainView()),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData.dark(),
+
+        home: MainView(),
+      ),
     );
   }
 }
