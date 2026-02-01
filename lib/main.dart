@@ -15,6 +15,7 @@ class MainApp extends StatelessWidget {
     return BlocProvider(
       create: (context) => BottomNavCubit(),
       child: MaterialApp(
+        
         debugShowCheckedModeBanner: false,
         theme: ThemeData.dark(),
 

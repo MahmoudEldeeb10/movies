@@ -1,16 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:movies/core/utils/styles.dart';
+import 'package:movies/features/home/presentation/views/widgets/home_app_bar.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(children: [Row(children: [
-            
+    return SafeArea(
+      child: Scaffold(
+        
+        body: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              CustomHomeAppBar(),
             ],
-          )]),
+          ),
+        ),
+      ),
     );
   }
 }
